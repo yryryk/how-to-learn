@@ -1,4 +1,4 @@
-/*div, a, p, img{
+/*div, a, p, ul, li, h1, h2, h3, header, section, img{
   border: solid red 1px;
 }*/
 
@@ -15,21 +15,22 @@
   min-height: 600px;
   max-height: 756px;
   position: relative;
+  background-color: #f2f2f2 ;
 }
 
 .logo{
   width: 228px;
   height: 32px;
   position: absolute;
+  background-image: url(../images/logo_place_header.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo_place_header{
   top: 30px;
   left: 64px;
-  background-image: url(../images/logo_place_header.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   z-index: 3;
 }
 
@@ -56,7 +57,7 @@
 }
 
 .header__link{
-text-decoration: none;
+  text-decoration: none;
 }
 
 .header__main-illustration{
@@ -77,6 +78,54 @@ text-decoration: none;
   right: 0;
   top: 64px;
   background-color:  #2f80ed ;
+}
+
+.description{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.two-columns{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.two-columns__brief{
+  width: 175px;
+  margin: 0;
+  line-height: 1.2em;
+  font-size: 18px;
+  font-weight: normal;
+  color:  #2f80ed ;
+}
+
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns__paragraph{
+  margin: 0;
+  margin-top: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:first-child{
+  margin: 0;
+}
+
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* и элемента с модификатором вида ключ-значение */
