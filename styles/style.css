@@ -1,6 +1,6 @@
-div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
-  border: solid red 1px;
-}
+/*div, a, p, ul, li, h1, h2, h3, h4, nav, td, tr, table, header, section, img {
+  border: 1px solid red;
+}*/
 
 .page {
   min-width: 1100px;
@@ -8,6 +8,8 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+/*Блок header*/
 
 .header {
   display: flex;
@@ -58,6 +60,7 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -79,6 +82,8 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
   top: 64px;
   background-color:  #2f80ed ;
 }
+
+/*Блок description*/
 
 .description {
   display: flex;
@@ -127,6 +132,8 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
   font-size: 24px;
   font-weight: 600;
 }
+
+/*Блок digits*/
 
 .digits {
   display: flex;
@@ -183,6 +190,8 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
   font-weight: normal;
 }
 
+/*Блок feynman*/
+
 .feynman {
   height: 890px;
   padding-top: 100px;
@@ -226,7 +235,10 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+  color: #2f80ed;
 }
+
+/*Блок kaufman*/
 
 .kaufman {
   display: flex;
@@ -252,14 +264,17 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
 .section-title_theme_dark {
   margin-top: 90px;
   color: white;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .table_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .table__cell_theme_dark {
@@ -273,12 +288,82 @@ div, a, p, ul, li, h1, h2, h3, td, tr, table, header, section, img{
   color: white;
 }
 
-.table__text_theme_dark{
+.table__text_theme_dark {
   color: white;
 }
+
+/*Блок footer*/
 
 .footer {
   min-height: 350px;
   background-color:  #1f1f1f ;
+  display: flex;
 }
 
+.footer__columns {
+  color: white;
+  width: 90%;
+  margin: 60px auto 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+  position: relative;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  top: 0;
+  left: 0;
+}
+
+.footer__autor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 18px auto;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_info{
+
+}
+
+.footer__column_content_social {
+
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.footer__column-links {
+ list-style: none;
+ padding: 0;
+ margin: 20px 0 16px 0;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  object-fit: fill;
+  object-position: center;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
