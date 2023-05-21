@@ -14,4 +14,4 @@
 Разметка и вёрстка, флексбокс-вёрстка и позиционирование элементов, iframe, анимации и трансформации, элементы и файловая структура по БЭМ, Git
 
 
-[Ссылка на страницу в GitHub Pages](https://yryryk.github.io/how-to-learn/ "https://yryryk.github.io/how-to-learn/")
+### [Ссылка на страницу в GitHub Pages](https://yryryk.github.io/how-to-learn/ "https://yryryk.github.io/how-to-learn/")
